@@ -8,6 +8,6 @@
 
 #import "MRCSortAlgorithm.h"
 
-@interface MRCInsertionSort : MRCSortAlgorithm
+@interface MRCInsertionSort : MRCSortAlgorithm <MRCSortAlgorithm>
 
 @end

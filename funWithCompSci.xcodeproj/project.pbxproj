@@ -31,6 +31,10 @@
 		F9791E4818539EF2004F62D9 /* MRCBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4718539EF2004F62D9 /* MRCBubbleSort.m */; };
 		F9791E4B1853A68D004F62D9 /* MRCShellSort.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4A1853A68D004F62D9 /* MRCShellSort.m */; };
 		F9791E4E1853A9D4004F62D9 /* MRCQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4D1853A9D4004F62D9 /* MRCQuickSort.m */; };
+		F9E943CD185A7A3D00D1DFF8 /* MRCStringFun.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E943CC185A7A3D00D1DFF8 /* MRCStringFun.m */; };
+		F9E943D0185A7A8700D1DFF8 /* MRCStringReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E943CF185A7A8700D1DFF8 /* MRCStringReverse.m */; };
+		F9E943D3185A7B7600D1DFF8 /* MRCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E943D2185A7B7600D1DFF8 /* MRCBase.m */; };
+		F9E943D6185A7CF000D1DFF8 /* MRCStringSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E943D5185A7CF000D1DFF8 /* MRCStringSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,14 @@
 		F9791E4A1853A68D004F62D9 /* MRCShellSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCShellSort.m; sourceTree = "<group>"; };
 		F9791E4C1853A9D4004F62D9 /* MRCQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCQuickSort.h; sourceTree = "<group>"; };
 		F9791E4D1853A9D4004F62D9 /* MRCQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCQuickSort.m; sourceTree = "<group>"; };
+		F9E943CB185A7A3D00D1DFF8 /* MRCStringFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCStringFun.h; sourceTree = "<group>"; };
+		F9E943CC185A7A3D00D1DFF8 /* MRCStringFun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCStringFun.m; sourceTree = "<group>"; };
+		F9E943CE185A7A8700D1DFF8 /* MRCStringReverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCStringReverse.h; sourceTree = "<group>"; };
+		F9E943CF185A7A8700D1DFF8 /* MRCStringReverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCStringReverse.m; sourceTree = "<group>"; };
+		F9E943D1185A7B7600D1DFF8 /* MRCBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCBase.h; sourceTree = "<group>"; };
+		F9E943D2185A7B7600D1DFF8 /* MRCBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCBase.m; sourceTree = "<group>"; };
+		F9E943D4185A7CF000D1DFF8 /* MRCStringSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCStringSettingsViewController.h; sourceTree = "<group>"; };
+		F9E943D5185A7CF000D1DFF8 /* MRCStringSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCStringSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,13 +159,10 @@
 				F9791E13185360B9004F62D9 /* Main.storyboard */,
 				F9791E16185360B9004F62D9 /* MRCMasterViewController.h */,
 				F9791E17185360B9004F62D9 /* MRCMasterViewController.m */,
-				F9791E4218536B78004F62D9 /* MRCSortSettingsViewController.h */,
-				F9791E4318536B78004F62D9 /* MRCSortSettingsViewController.m */,
-				243D9C59185A1A70004D921D /* MRCSortViewController.h */,
-				243D9C5A185A1A70004D921D /* MRCSortViewController.m */,
-				243D9C5B185A1A70004D921D /* MRCSortView.h */,
-				243D9C5C185A1A70004D921D /* MRCSortView.m */,
-				F9791E4518539EC3004F62D9 /* Sorting Algorithms */,
+				F9E943D1185A7B7600D1DFF8 /* MRCBase.h */,
+				F9E943D2185A7B7600D1DFF8 /* MRCBase.m */,
+				F9E943CA185A7A1F00D1DFF8 /* String Stuff */,
+				F9E943C9185A7A0C00D1DFF8 /* Sorting */,
 				F9791E1C185360B9004F62D9 /* Images.xcassets */,
 				F9791E08185360B9004F62D9 /* Supporting Files */,
 			);
@@ -208,6 +217,33 @@
 				243D9C57185A16F3004D921D /* MRCSortObject.m */,
 			);
 			name = "Sorting Algorithms";
+			sourceTree = "<group>";
+		};
+		F9E943C9185A7A0C00D1DFF8 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				F9791E4218536B78004F62D9 /* MRCSortSettingsViewController.h */,
+				F9791E4318536B78004F62D9 /* MRCSortSettingsViewController.m */,
+				243D9C59185A1A70004D921D /* MRCSortViewController.h */,
+				243D9C5A185A1A70004D921D /* MRCSortViewController.m */,
+				243D9C5B185A1A70004D921D /* MRCSortView.h */,
+				243D9C5C185A1A70004D921D /* MRCSortView.m */,
+				F9791E4518539EC3004F62D9 /* Sorting Algorithms */,
+			);
+			name = Sorting;
+			sourceTree = "<group>";
+		};
+		F9E943CA185A7A1F00D1DFF8 /* String Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				F9E943D4185A7CF000D1DFF8 /* MRCStringSettingsViewController.h */,
+				F9E943D5185A7CF000D1DFF8 /* MRCStringSettingsViewController.m */,
+				F9E943CB185A7A3D00D1DFF8 /* MRCStringFun.h */,
+				F9E943CC185A7A3D00D1DFF8 /* MRCStringFun.m */,
+				F9E943CE185A7A8700D1DFF8 /* MRCStringReverse.h */,
+				F9E943CF185A7A8700D1DFF8 /* MRCStringReverse.m */,
+			);
+			name = "String Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,12 +344,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9791E4818539EF2004F62D9 /* MRCBubbleSort.m in Sources */,
+				F9E943D3185A7B7600D1DFF8 /* MRCBase.m in Sources */,
 				243D9C5E185A1A70004D921D /* MRCSortView.m in Sources */,
 				F9791E4418536B78004F62D9 /* MRCSortSettingsViewController.m in Sources */,
+				F9E943D6185A7CF000D1DFF8 /* MRCStringSettingsViewController.m in Sources */,
 				F9791E18185360B9004F62D9 /* MRCMasterViewController.m in Sources */,
 				F9791E4B1853A68D004F62D9 /* MRCShellSort.m in Sources */,
+				F9E943CD185A7A3D00D1DFF8 /* MRCStringFun.m in Sources */,
 				F9791E0E185360B9004F62D9 /* main.m in Sources */,
 				243D9C5D185A1A70004D921D /* MRCSortViewController.m in Sources */,
+				F9E943D0185A7A8700D1DFF8 /* MRCStringReverse.m in Sources */,
 				F9791E3E18536186004F62D9 /* MRCSortAlgorithm.m in Sources */,
 				F9791E12185360B9004F62D9 /* MRCAppDelegate.m in Sources */,
 				F9791E4118536353004F62D9 /* MRCMergeSort.m in Sources */,

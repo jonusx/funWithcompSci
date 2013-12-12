@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MRCSortObject.h"
+#import "MRCBase.h"
 
 typedef NS_ENUM(NSUInteger, MRCBigOComplexityType) {
     MRCBigOComplexityTypeWorst,
@@ -37,20 +38,24 @@ typedef NS_ENUM(NSUInteger, MRCArraySortAlgorithm) {
 
 @end
 
-@interface MRCSortAlgorithm : NSObject
+@protocol MRCSortAlgorithm <NSObject>
 
-@property (nonatomic, readonly) NSUInteger numberOfItems;
+- (NSString *)complexity:(MRCBigOComplexityType)complexityType;
+- (void)sort;
+- (void)reset;
+- (NSString *)algorithmName;
+
+@end
+
+@interface MRCSortAlgorithm : MRCBase <MRCSortAlgorithm>
+
+@property (nonatomic) NSUInteger numberOfItems;
 @property (atomic, readonly, copy) NSMutableArray *arrayToSort;
 @property (nonatomic, assign) MRCArraySortStatus status;
 @property (nonatomic, assign) CGFloat runTime;
 @property (nonatomic, weak) id<arraySortStatusDelegate> statusDelegate;
 
 - (instancetype)initWithAlgorithm:(MRCArraySortAlgorithm)algorithm total:(NSUInteger)total;
-
-- (NSString *)complexity:(MRCBigOComplexityType)complexityType;
-
-- (void)sort;
-- (void)reset;
 
 CGFloat BNRTimeBlock (void (^block)(void));
 

@@ -35,6 +35,10 @@
     }
 }
 
+- (NSString *)algorithmName {
+    return @"Quicksort";
+}
+
 - (void)sort {
     self.status = MRCArraySortStatusInProgress;
     

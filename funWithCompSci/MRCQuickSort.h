@@ -8,6 +8,6 @@
 
 #import "MRCSortAlgorithm.h"
 
-@interface MRCQuickSort : MRCSortAlgorithm
+@interface MRCQuickSort : MRCSortAlgorithm <MRCSortAlgorithm>
 
 @end

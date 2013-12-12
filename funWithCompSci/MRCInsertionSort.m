@@ -14,6 +14,7 @@
 @end
 
 @implementation MRCInsertionSort
+
 - (NSString *)complexity:(MRCBigOComplexityType)complexityType {
     static NSString *average = @"O(n^2)";
     static NSString *best = @"O(n)";
@@ -33,6 +34,10 @@
             return nil;
             break;
     }
+}
+
+- (NSString *)algorithmName {
+    return @"Insertion Sort";
 }
 
 - (void)sort {
@@ -86,6 +91,5 @@
         temp.active = NO;
 	}
 }
-
 
 @end

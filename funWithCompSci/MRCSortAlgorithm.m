@@ -7,7 +7,6 @@
 //
 
 #import "MRCSortAlgorithm.h"
-#import <mach/mach_time.h>
 #import "MRCMergeSort.h"
 #import "MRCBubbleSort.h"
 #import "MRCShellSort.h"
@@ -37,10 +36,8 @@
             break;
     }
     
-    if (self) {
-        _numberOfItems = total;
-        [self setup];
-    }
+    _numberOfItems = total;
+    
     return self;
 }
 
@@ -84,21 +81,13 @@
 }
 
 - (void)sort {
-    
+    //empty
 }
 
-CGFloat BNRTimeBlock (void (^block)(void)) {
-    mach_timebase_info_data_t info;
-    if (mach_timebase_info(&info) != KERN_SUCCESS) return -1.0;
-    
-    uint64_t start = mach_absolute_time ();
-    block ();
-    uint64_t end = mach_absolute_time ();
-    uint64_t elapsed = end - start;
-    
-    uint64_t nanos = elapsed * info.numer / info.denom;
-    return (CGFloat)nanos / NSEC_PER_SEC;
-    
+- (NSString *)algorithmName {
+    //empty
+    return nil;
 }
+
 
 @end

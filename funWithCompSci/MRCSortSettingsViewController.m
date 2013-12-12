@@ -10,6 +10,9 @@
 #import "MRCSortViewController.h"
 
 @interface MRCSortSettingsViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *worstLabel;
+@property (weak, nonatomic) IBOutlet UILabel *averageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bestLabel;
 @property (weak, nonatomic) IBOutlet UITextField *numberOfItemsTextField;
 @property (nonatomic, strong) MRCSortAlgorithm *sortAlgorithm;
 @end
@@ -35,8 +38,15 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.sortAlgorithm = [[MRCSortAlgorithm alloc] initWithAlgorithm:self.algorithmToUse total:0];
+    
+    self.title = [self.sortAlgorithm algorithmName];
+    self.averageLabel.text = [self.sortAlgorithm complexity:MRCBigOComplexityTypeAverage];
+    self.worstLabel.text = [self.sortAlgorithm complexity:MRCBigOComplexityTypeWorst];
+    self.bestLabel.text = [self.sortAlgorithm complexity:MRCBigOComplexityTypeBest];
     
     [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
@@ -46,10 +56,11 @@
     if (itemCount > 500) {
         itemCount = 500;
     }
+    self.sortAlgorithm.numberOfItems = itemCount;
     
     MRCSortViewController *sortController = [self.storyboard instantiateViewControllerWithIdentifier:@"MRCSortViewController"];
     sortController.amountOfItems = itemCount;
-    sortController.sortAlgorithm = [[MRCSortAlgorithm alloc] initWithAlgorithm:self.algorithmToUse total:itemCount];
+    sortController.sortAlgorithm = self.sortAlgorithm;
     [self.navigationController pushViewController:sortController animated:YES];
 //    
 //    [self.sortAlgorithm sort];

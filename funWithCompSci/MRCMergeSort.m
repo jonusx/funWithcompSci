@@ -35,6 +35,10 @@
     }
 }
 
+- (NSString *)algorithmName {
+    return @"Merge Sort";
+}
+
 - (void)sort {
     self.status = MRCArraySortStatusInProgress;
     self.runTime = BNRTimeBlock(^{
