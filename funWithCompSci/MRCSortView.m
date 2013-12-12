@@ -25,7 +25,7 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGContextSetLineWidth(context, 0.5);
-    CGContextSetFillColorWithColor(context, [[UIColor greenColor] CGColor]);
+    CGContextSetFillColorWithColor(context, [[UIColor blueColor] CGColor]);
     CGContextSetStrokeColorWithColor(context, [[UIColor whiteColor] CGColor]);
 
     float rectHeights = rect.size.height/[self.maxValue floatValue];
