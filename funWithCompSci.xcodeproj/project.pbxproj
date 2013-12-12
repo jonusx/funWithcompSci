@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243D9C58185A16F3004D921D /* MRCSortObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 243D9C57185A16F3004D921D /* MRCSortObject.m */; };
+		243D9C5D185A1A70004D921D /* MRCSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243D9C5A185A1A70004D921D /* MRCSortViewController.m */; };
+		243D9C5E185A1A70004D921D /* MRCSortView.m in Sources */ = {isa = PBXBuildFile; fileRef = 243D9C5C185A1A70004D921D /* MRCSortView.m */; };
+		24EB5FAA185A32A100B42CB3 /* MRCInsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EB5FA9185A32A100B42CB3 /* MRCInsertionSort.m */; };
 		F9791E02185360B9004F62D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9791E01185360B9004F62D9 /* Foundation.framework */; };
 		F9791E04185360B9004F62D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9791E03185360B9004F62D9 /* CoreGraphics.framework */; };
 		F9791E06185360B9004F62D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9791E05185360B9004F62D9 /* UIKit.framework */; };
@@ -15,13 +19,18 @@
 		F9791E12185360B9004F62D9 /* MRCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E11185360B9004F62D9 /* MRCAppDelegate.m */; };
 		F9791E15185360B9004F62D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9791E13185360B9004F62D9 /* Main.storyboard */; };
 		F9791E18185360B9004F62D9 /* MRCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E17185360B9004F62D9 /* MRCMasterViewController.m */; };
-		F9791E1B185360B9004F62D9 /* MRCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E1A185360B9004F62D9 /* MRCDetailViewController.m */; };
 		F9791E1D185360B9004F62D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9791E1C185360B9004F62D9 /* Images.xcassets */; };
 		F9791E24185360B9004F62D9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9791E23185360B9004F62D9 /* XCTest.framework */; };
 		F9791E25185360B9004F62D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9791E01185360B9004F62D9 /* Foundation.framework */; };
 		F9791E26185360B9004F62D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9791E05185360B9004F62D9 /* UIKit.framework */; };
 		F9791E2E185360B9004F62D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F9791E2C185360B9004F62D9 /* InfoPlist.strings */; };
 		F9791E30185360B9004F62D9 /* funWithCompSciTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E2F185360B9004F62D9 /* funWithCompSciTests.m */; };
+		F9791E3E18536186004F62D9 /* MRCSortAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E3D18536186004F62D9 /* MRCSortAlgorithm.m */; };
+		F9791E4118536353004F62D9 /* MRCMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4018536353004F62D9 /* MRCMergeSort.m */; };
+		F9791E4418536B78004F62D9 /* MRCSortSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4318536B78004F62D9 /* MRCSortSettingsViewController.m */; };
+		F9791E4818539EF2004F62D9 /* MRCBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4718539EF2004F62D9 /* MRCBubbleSort.m */; };
+		F9791E4B1853A68D004F62D9 /* MRCShellSort.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4A1853A68D004F62D9 /* MRCShellSort.m */; };
+		F9791E4E1853A9D4004F62D9 /* MRCQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = F9791E4D1853A9D4004F62D9 /* MRCQuickSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		243D9C56185A16F3004D921D /* MRCSortObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSortObject.h; sourceTree = "<group>"; };
+		243D9C57185A16F3004D921D /* MRCSortObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSortObject.m; sourceTree = "<group>"; };
+		243D9C59185A1A70004D921D /* MRCSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSortViewController.h; sourceTree = "<group>"; };
+		243D9C5A185A1A70004D921D /* MRCSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSortViewController.m; sourceTree = "<group>"; };
+		243D9C5B185A1A70004D921D /* MRCSortView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSortView.h; sourceTree = "<group>"; };
+		243D9C5C185A1A70004D921D /* MRCSortView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSortView.m; sourceTree = "<group>"; };
+		24EB5FA8185A32A100B42CB3 /* MRCInsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCInsertionSort.h; sourceTree = "<group>"; };
+		24EB5FA9185A32A100B42CB3 /* MRCInsertionSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCInsertionSort.m; sourceTree = "<group>"; };
 		F9791DFE185360B9004F62D9 /* funWithCompSci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funWithCompSci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9791E01185360B9004F62D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F9791E03185360B9004F62D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,14 +65,24 @@
 		F9791E14185360B9004F62D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9791E16185360B9004F62D9 /* MRCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCMasterViewController.h; sourceTree = "<group>"; };
 		F9791E17185360B9004F62D9 /* MRCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCMasterViewController.m; sourceTree = "<group>"; };
-		F9791E19185360B9004F62D9 /* MRCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRCDetailViewController.h; sourceTree = "<group>"; };
-		F9791E1A185360B9004F62D9 /* MRCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRCDetailViewController.m; sourceTree = "<group>"; };
 		F9791E1C185360B9004F62D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F9791E22185360B9004F62D9 /* funWithCompSciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = funWithCompSciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9791E23185360B9004F62D9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F9791E2B185360B9004F62D9 /* funWithCompSciTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "funWithCompSciTests-Info.plist"; sourceTree = "<group>"; };
 		F9791E2D185360B9004F62D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F9791E2F185360B9004F62D9 /* funWithCompSciTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = funWithCompSciTests.m; sourceTree = "<group>"; };
+		F9791E3C18536186004F62D9 /* MRCSortAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSortAlgorithm.h; sourceTree = "<group>"; };
+		F9791E3D18536186004F62D9 /* MRCSortAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSortAlgorithm.m; sourceTree = "<group>"; };
+		F9791E3F18536353004F62D9 /* MRCMergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCMergeSort.h; sourceTree = "<group>"; };
+		F9791E4018536353004F62D9 /* MRCMergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCMergeSort.m; sourceTree = "<group>"; };
+		F9791E4218536B78004F62D9 /* MRCSortSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCSortSettingsViewController.h; sourceTree = "<group>"; };
+		F9791E4318536B78004F62D9 /* MRCSortSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCSortSettingsViewController.m; sourceTree = "<group>"; };
+		F9791E4618539EF2004F62D9 /* MRCBubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCBubbleSort.h; sourceTree = "<group>"; };
+		F9791E4718539EF2004F62D9 /* MRCBubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCBubbleSort.m; sourceTree = "<group>"; };
+		F9791E491853A68D004F62D9 /* MRCShellSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCShellSort.h; sourceTree = "<group>"; };
+		F9791E4A1853A68D004F62D9 /* MRCShellSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCShellSort.m; sourceTree = "<group>"; };
+		F9791E4C1853A9D4004F62D9 /* MRCQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCQuickSort.h; sourceTree = "<group>"; };
+		F9791E4D1853A9D4004F62D9 /* MRCQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCQuickSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +147,13 @@
 				F9791E13185360B9004F62D9 /* Main.storyboard */,
 				F9791E16185360B9004F62D9 /* MRCMasterViewController.h */,
 				F9791E17185360B9004F62D9 /* MRCMasterViewController.m */,
-				F9791E19185360B9004F62D9 /* MRCDetailViewController.h */,
-				F9791E1A185360B9004F62D9 /* MRCDetailViewController.m */,
+				F9791E4218536B78004F62D9 /* MRCSortSettingsViewController.h */,
+				F9791E4318536B78004F62D9 /* MRCSortSettingsViewController.m */,
+				243D9C59185A1A70004D921D /* MRCSortViewController.h */,
+				243D9C5A185A1A70004D921D /* MRCSortViewController.m */,
+				243D9C5B185A1A70004D921D /* MRCSortView.h */,
+				243D9C5C185A1A70004D921D /* MRCSortView.m */,
+				F9791E4518539EC3004F62D9 /* Sorting Algorithms */,
 				F9791E1C185360B9004F62D9 /* Images.xcassets */,
 				F9791E08185360B9004F62D9 /* Supporting Files */,
 			);
@@ -155,6 +187,27 @@
 				F9791E2C185360B9004F62D9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9791E4518539EC3004F62D9 /* Sorting Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				F9791E3C18536186004F62D9 /* MRCSortAlgorithm.h */,
+				F9791E3D18536186004F62D9 /* MRCSortAlgorithm.m */,
+				F9791E3F18536353004F62D9 /* MRCMergeSort.h */,
+				F9791E4018536353004F62D9 /* MRCMergeSort.m */,
+				F9791E4618539EF2004F62D9 /* MRCBubbleSort.h */,
+				F9791E4718539EF2004F62D9 /* MRCBubbleSort.m */,
+				F9791E491853A68D004F62D9 /* MRCShellSort.h */,
+				F9791E4A1853A68D004F62D9 /* MRCShellSort.m */,
+				F9791E4C1853A9D4004F62D9 /* MRCQuickSort.h */,
+				F9791E4D1853A9D4004F62D9 /* MRCQuickSort.m */,
+				24EB5FA8185A32A100B42CB3 /* MRCInsertionSort.h */,
+				24EB5FA9185A32A100B42CB3 /* MRCInsertionSort.m */,
+				243D9C56185A16F3004D921D /* MRCSortObject.h */,
+				243D9C57185A16F3004D921D /* MRCSortObject.m */,
+			);
+			name = "Sorting Algorithms";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,10 +307,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9791E1B185360B9004F62D9 /* MRCDetailViewController.m in Sources */,
+				F9791E4818539EF2004F62D9 /* MRCBubbleSort.m in Sources */,
+				243D9C5E185A1A70004D921D /* MRCSortView.m in Sources */,
+				F9791E4418536B78004F62D9 /* MRCSortSettingsViewController.m in Sources */,
 				F9791E18185360B9004F62D9 /* MRCMasterViewController.m in Sources */,
+				F9791E4B1853A68D004F62D9 /* MRCShellSort.m in Sources */,
 				F9791E0E185360B9004F62D9 /* main.m in Sources */,
+				243D9C5D185A1A70004D921D /* MRCSortViewController.m in Sources */,
+				F9791E3E18536186004F62D9 /* MRCSortAlgorithm.m in Sources */,
 				F9791E12185360B9004F62D9 /* MRCAppDelegate.m in Sources */,
+				F9791E4118536353004F62D9 /* MRCMergeSort.m in Sources */,
+				F9791E4E1853A9D4004F62D9 /* MRCQuickSort.m in Sources */,
+				243D9C58185A16F3004D921D /* MRCSortObject.m in Sources */,
+				24EB5FAA185A32A100B42CB3 /* MRCInsertionSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +528,7 @@
 				F9791E35185360B9004F62D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9791E36185360B9004F62D9 /* Build configuration list for PBXNativeTarget "funWithCompSciTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +537,7 @@
 				F9791E38185360B9004F62D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
