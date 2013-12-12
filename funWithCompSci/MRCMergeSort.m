@@ -10,7 +10,6 @@
 
 @interface MRCMergeSort ()
 @property (atomic, strong) NSMutableArray *arrayToSort;
-@property (nonatomic, assign) MRCArraySortStatus status;
 @end
 
 @implementation MRCMergeSort
@@ -37,12 +36,12 @@
 }
 
 - (void)sort {
-    // self.status = MRCArraySortStatusInProgress;
+    self.status = MRCArraySortStatusInProgress;
     self.runTime = BNRTimeBlock(^{
         [self mergeArrayWithMinIndex:0 withMaxIndex:[self.arrayToSort count] -1];
     });
     
-    //self.status = MRCArraySortStatusFinished;
+    self.status = MRCArraySortStatusFinished;
 }
 
 - (void)mergeArrayWithMinIndex:(NSUInteger)minIndex withMaxIndex:(NSUInteger)maxindex

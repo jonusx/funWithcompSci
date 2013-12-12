@@ -10,7 +10,6 @@
 
 @interface MRCBubbleSort ()
 @property (atomic, strong) NSMutableArray *arrayToSort;
-@property (nonatomic, assign) MRCArraySortStatus status;
 @end
 
 @implementation MRCBubbleSort
@@ -37,11 +36,11 @@
 }
 
 - (void)sort {
-    // self.status = MRCArraySortStatusInProgress;
+    self.status = MRCArraySortStatusInProgress;
     self.runTime = BNRTimeBlock(^{
         [self bubbleSortArray];
     });
-    //self.status = MRCArraySortStatusFinished;
+    self.status = MRCArraySortStatusFinished;
 }
 
 - (void)bubbleSortArray

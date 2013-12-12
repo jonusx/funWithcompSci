@@ -10,7 +10,6 @@
 
 @interface MRCShellSort ()
 @property (atomic, strong) NSMutableArray *arrayToSort;
-@property (nonatomic, assign) MRCArraySortStatus status;
 @end
 
 @implementation MRCShellSort

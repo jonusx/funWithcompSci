@@ -33,13 +33,11 @@
     
     [self.values enumerateObjectsUsingBlock:^(MRCSortObject *number, NSUInteger idx, BOOL *stop) {
         @autoreleasepool {
-            
         
             elementRect = CGRectMake(0, idx * rectHeights, (([number.value floatValue]/[self.maxValue floatValue])) * rect.size.width, rectHeights);
             
             if (number.active) {
                 CGContextSetFillColorWithColor(context, [[UIColor redColor] CGColor]);
-                //number.active = NO;
             }
             else
             {

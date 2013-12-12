@@ -43,6 +43,9 @@
 
 - (IBAction)beginSort:(id)sender {
     NSUInteger itemCount = [self.numberOfItemsTextField.text integerValue];
+    if (itemCount > 500) {
+        itemCount = 500;
+    }
     
     MRCSortViewController *sortController = [self.storyboard instantiateViewControllerWithIdentifier:@"MRCSortViewController"];
     sortController.amountOfItems = itemCount;

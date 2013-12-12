@@ -12,5 +12,4 @@
 
 @property (nonatomic, strong) NSArray *values;
 @property (nonatomic, strong) NSNumber *maxValue;
-@property (atomic, strong) NSIndexSet *selectedSet;
 @end
